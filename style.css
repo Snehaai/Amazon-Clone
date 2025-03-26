@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo{ 
+    height: 50px; 
+    width: 100px; 
+}
+
+.logo{
+    background-image: url(amazon_logo.png);
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+
+.border { 
+    border: 1.5px solid transparent;
+}
+
+.border:hover { 
+    border: 1.5px solid white; 
+}
+
+/*Location*/
+.add-first{ 
+    color: #cccccc; 
+    font-size: 0.85rem; 
+    margin-left: 15px; 
+}
+
+.add-sec{ 
+    font-size: 1rem; 
+    margin-left: 3px;
+}
+
+.add-icon{ 
+    display: flex; 
+    align-items: center; 
+}
+
+/*Search*/
+.nav-search{ 
+    display: flex; 
+    justify-content: space-evenly;
+    background-color: pink; 
+    height: 40px; 
+    width: 620px; 
+    border-radius: 4px; 
+}
+
+.nav-search:hover{ 
+    border: 2px solid orange; 
+}
+
+.search-select{
+    background-color: #f3f3f3;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    width: 50px;
+    text-align: center;
+}
+
+.search-input{
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+}
+
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    background-color: #febd68;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #343535;
+}
+
+/*Language*/
+.language-option {
+    display: flex;
+    padding: .5rem .5rem;
+}
+
+.language-option:hover {
+    outline: 1px solid white;
+}
+
+.flag {
+    width: 20px;
+}
+
+.select-language {
+    font-size: .7rem;
+    font-weight: bold;
+    color: white;
+    background: transparent;
+    border: none;
+}
+
+.select-language option {
+    color: black;
+}
+
+/*Acc and Orders*/
+span{
+    font-size: 0.7rem;
+}
+
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/*Cart*/
+.nav-cart i{
+    font-size: 30px;
+}
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/*Panel*/
+.panel{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-ops p{
+    display: inline;
+    margin-left: 15px;
+}
+
+.panel-ops{
+    width: 70%;
+    font-size: 0.85rem;
+}
+
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight: 700;
+
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* Hero Sec/Carousel/Background Image */
+.carousel {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.carousel .slides-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel .slides-container::-webkit-scrollbar {
+    display: none;
+}
+
+.slides-container .slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 100%;
+    overflow: hidden;
+}
+
+.slide .content {
+    width: 100%;
+    height: 100%;
+}
+
+.slide .content img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slide .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    scale: 2;
+    margin: 1rem;
+}
+
+.slide .prev {
+    left: 1rem;
+}
+
+.slide .next {
+    right: 1rem;
+}
+
+/* Amazon.in */
+.carousel-mesg {
+    width: 98%;
+    position: absolute;
+    text-align: center;
+    font-size: .7rem;
+    background-color: #f5f6f6;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-mesg p {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.carousel-mesg a  {
+    font-size: 0.7rem;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 2px;
+    color: #2162a1;
+}
+
+
+/* Categories/Shop/Cards/Container */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    max-width: 1400px;
+    margin: auto;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.card {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(25% - 1.5rem); /* 4 cards per row with spacing */
+    width: 300px;    /* Fixed width */
+    height: 320px;
+    position: relative;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    padding-top: 0px;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.image-grid div {
+    flex: 1 1 calc(50% - 10px); /* 2 images per row inside .image-grid */
+}
+
+.image-grid img {
+    width: 100%;
+}
+
+.item-name {
+    text-align: left;
+    font-size: 0.8rem;
+    color: #333;
+    margin-top: 1px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* Positioning links */
+.card-link {
+    display: block;
+    margin-top: auto;
+    color: #0073e6;
+    text-decoration: none;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .card {
+        flex: 1 1 calc(50% - 1.5rem); /* 2 cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%; /* 1 card per row */
+    }
+}
+
+
+/* Footer */
+.back-option {
+    text-decoration: none;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .85rem;
+    color: white;
+    background-color: #37475A;
+}
+
+.footer-links {
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #232F3d;
+    color: white;
+}
+
+.footer-links ul {
+    margin-top: 3rem;
+}
+
+.footer-links ul p {
+    font-weight: bold;
+}
+
+.footer-links ul a {
+    display: block;
+    font-size: .8rem;
+    color: #dddddd;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.footer-links ul a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #232F3d;
+    color: white;
+    border-top: 0.5px solid #84868878;
+}
+
+.footer-bottom .logoa{
+    width: 100px;
+    height: 50px;
+    background-image: url(amazon_logo.png);
+    background-size: cover;
+}
+
+.footer-bottom .options {
+    display: flex;
+    gap: .5rem;
+    margin-left: 3rem;
+}
+
+.footer-bottom .options select {
+    font-size: .5rem;
+    text-decoration: none;
+    color: #cccccc;
+    background: transparent;
+    border: 1px solid #848688;
+    border-radius: 3px;
+    padding: .5rem;
+}
+
+.policies {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    font-size: .5rem;
+    color: white;
+    background-color: #131A22;
+}
+
+.pages a {
+    text-decoration: none;
+    color: white;
+    margin-left: 1rem;
+
+}
+
+/* Small Devices */
+@media screen and (max-width: 900px) {
+    :root {
+        font-size: 2vw;
+    }
+    
+    /* Header  */
+    .navbar {
+        height: 5vw;
+    }
+    
+    .nav-logo .logo {
+        width: 7vw;
+    }
+    
+    .nav-search {
+        height: 4vw;
+    }
+    
+    .search-select {
+        width: 7vw;
+    }
+    
+    .search-input {
+        width: 1vw;
+    }
+    
+    .search-icon i {
+        padding: .5rem .5rem;
+    }
+    
+    .flag {
+        width: 2vw;
+    }
+    
+    .nav-cart {
+        width: 3vw;
+    }
+    
+    .panel {
+        height: 5vw;
+    }
+    
+    /* Main */
+    .carousel {
+        height: 30vw;
+    }
+    
+    .arrow i {
+        height: 4vw;
+    }
+    
+    .card {
+        height: 25vw;
+        flex: 1 0 20vw;
+        font-size: .5rem;
+    }
+    
+    .card img {
+        height: 14vw;
+    }
+    
+    /* Footer */
+    .back-option {
+        height: 5vw;
+    }
+    
+    .footer-links {
+        height: 40vw;
+    }
+    
+    .footer-bottom .logoa {
+        width: 7vw;
+    }
+    
+    .policies {
+        height: 8vw;
+    }
+}
+
+

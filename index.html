@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+            <div class="nav-address border">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-sec">India</p>
+                </div>                
+            </div>
+            <div class="nav-search">
+                <select class="search-select">                    <option>All</option>
+                </select>
+                <input type="text" placeholder="Search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="language-option">
+                <div class="flag">
+                    <i class="fa-regular fa-flag"></i>
+                </div>
+                <select class="select-language">
+                    <option value="lan">EN</option>
+                    <option value="lan">HN</option>
+                    <option value="lan">GR</option>
+                </select>
+            </div>
+
+            <div class="nav-signin border">
+                <p><span>Hello, sign in</span></p>
+                <p class="nav-second">Account & Lists</p>
+            </div>
+            <div class="nav-return border">
+                <p><span>Returns</span></p>
+                <p class="nav-second">& Orders</p>
+            </div>
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i> Cart
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-all border">
+                <i class="fa-solid fa-bars"></i> 
+                All
+            </div>
+            <div class="panel-ops">
+                <p class="border">Today's Deals</p>
+                <p class="border">Customer Service</p>
+                <p class="border">Registry</p>
+                <p class="border">Gift Cards</p>
+                <p class="border">Sell</p>
+            </div>
+            <div class="panel-deals border">
+                Shop Deals in Electronics
+            </div>
+        </div>
+
+    </header>
+
+    <div class="carousel">
+        <div class="slides-container">
+            <div id="slide1" class="slide">
+                <div class="content">
+                    <img src="/A1.jpg">
+                </div>
+                <a href="#slide3" class="prev arrow">
+                    <i class="fa-solid fa-chevron-left" 
+                        style="color: #ffffff;">
+                    </i>
+                </a>
+                <a href="#slide2" class="next arrow">
+                    <i class="fa-solid fa-chevron-right" 
+                        style="color: #ffffff;">
+                    </i>
+                </a>
+            </div>
+            <div id="slide2" class="slide">
+                <div class="content">
+                    <img src="/A2.jpg">
+                </div>
+                <div class="arrows"></div>
+                <a href="#slide1" class="prev arrow">
+                    <i class="fa-solid fa-chevron-left" 
+                        style="color: #ffffff;">
+                    </i>
+                </a>
+                <a href="#slide3" class="next arrow">
+                    <i class="fa-solid fa-chevron-right" 
+                        style="color: #ffffff;">
+                    </i>
+                </a>
+            </div>
+            <div id="slide3" class="slide">
+                <div class="content">
+                    <img src="/A3.jpg">
+                </div>
+                <div class="arrows"></div>
+                <a href="#slide2" class="prev arrow">
+                    <i class="fa-solid fa-chevron-left" 
+                        style="color: #ffffff;">
+                    </i>
+                </a>
+                <a href="#slide1" class="next arrow">
+                    <i class="fa-solid fa-chevron-right" 
+                        style="color: #ffffff;">
+                    </i>
+                </a>
+            </div>
+        </div>
+        <div class="carousel-mesg">
+            <p>
+                You are on amazon.com. You can also shop 
+                on Amazon India for millions of products 
+                with fast local delivery. 
+                <a href="https://www.amazon.in"> 
+                    Click here to go to amazon.in
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <section class="grid-container">
+        <div class="card">
+            <h2>Gaming accessories</h2>
+            <div class="image-grid">
+                <div>
+                    <img src="headset.jpg" alt="Headsets">
+                    <p class="item-name">Headsets</p>
+                </div>
+                <div>
+                    <img src="Keyboards.jpg" alt="Keyboards">
+                    <p class="item-name">Keyboards</p>
+                </div>
+                <div>
+                    <img src="Computer mice.jpg" alt="Computer mice">
+                    <p class="item-name">Computer Mice</p>
+                </div>
+                <div>
+                    <img src="Box1.jpg" alt="Chairs">
+                    <p class="item-name">Chairs</p>
+                </div>
+            </div>
+            <a href="#" class="card-link">See more</a>
+        </div>
+    
+        <div class="card">
+            <h2>Shop for your home essentials</h2>
+            <div class="image-grid">
+                <div>
+                    <img src="Box2.jpg" alt="Cleaning Tools">
+                    <p class="item-name">Cleaning Tools</p>
+                </div>
+                <div>
+                    <img src="storage.jpg" alt="Home Storage">
+                    <p class="item-name">Home Storage</p>
+                </div>
+                <div>
+                    <img src="decor.jpg" alt="Home Decor">
+                    <p class="item-name">Home Decor</p>
+                </div>
+                <div>
+                    <img src="bedding.jpg" alt="Bedding">
+                    <p class="item-name">Bedding</p>
+                </div>
+            </div>
+            <a href="#" class="card-link">Discover more in Home</a>
+        </div>
+    
+        <div class="card">
+            <h2>Top categories in Kitchen appliances</h2>
+            <div class="image-grid kitchen-grid">
+                <div>
+                    <img src="cooker.jpg" alt="Cooker">
+                    <p class="item-name">Cooker</p>
+                </div>
+                <div>
+                    <img src="coffee.jpg" alt="Coffee">
+                    <p class="item-name">Coffee</p>
+                </div>
+                <div>
+                    <img src="pots.jpg" alt="Pots and Pans">
+                    <p class="item-name">Pots and Pans</p>
+                </div>
+                <div>
+                    <img src="kettles.jpg" alt="Kettles">
+                    <p class="item-name">Kettles</p>
+                </div>
+            </div>
+            <a href="#" class="card-link">Explore all products in Kitchen</a>
+        </div>
+    
+        <div class="card">
+            <h2>Get your game on</h2>
+            <img src="Box4.jpg" alt="Gaming PC" class="full-width">
+            <p class="item-name">Gaming PC</p>
+            <a href="#" class="card-link">Shop gaming</a>
+        </div>
+    
+        <div class="card">
+            <h2>New year, new supplies</h2>
+            <img src="supplies.jpg" alt="Office Supplies" class="full-width">
+            <p class="item-name">Office Supplies</p>
+            <a href="#" class="card-link">Shop office products</a>
+        </div>
+    
+        <div class="card">
+            <h2>Shop deals in Fashion</h2>
+            <div class="image-grid">
+                <div>
+                    <img src="jeans.jpg" alt="Jeans">
+                    <p class="item-name">Jeans</p>
+                </div>
+                <div>
+                    <img src="tops.jpg" alt="Tops">
+                    <p class="item-name">Tops</p>
+                </div>
+                <div>
+                    <img src="dresses.jpg" alt="Dresses">
+                    <p class="item-name">Dresses</p>
+                </div>
+                <div>
+                    <img src="shoes.jpg" alt="Shoes">
+                    <p class="item-name">Shoes</p>
+                </div>
+            </div>
+            <a href="#" class="card-link">See all deals</a>
+        </div>
+    
+        <div class="card">
+            <h2>New home arrivals under $50</h2>
+            <div class="image-grid">
+                <div>
+                    <img src="kitchen.jpg" alt="Kitchen & Dining">
+                    <p class="item-name">Kitchen & Dining</p>
+                </div>
+                <div>
+                    <img src="home-improvement.jpg" alt="Home Improvement">
+                    <p class="item-name">Home Improvement</p>
+                </div>
+                <div>
+                    <img src="decors.jpg" alt="Décor">
+                    <p class="item-name">Décor</p>
+                </div>
+                <div>
+                    <img src="bedding-bath.jpg" alt="Bedding & Bath">
+                    <p class="item-name">Bedding & Bath</p>
+                </div>
+            </div>
+            <a href="#" class="card-link">Shop the latest from Home</a>
+        </div>
+    
+        <div class="card">
+            <h2>Fill your basket with joy</h2>
+            <img src="easter.jpg" alt="Easter Shopping" class="full-width">
+            <p class="item-name">Easter Shopping</p>
+            <a href="#" class="card-link">Shop for Easter</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+<footer>
+    <a href="#" class="back-option">
+        Back to top
+    </a>
+    <div class="footer-links">
+        <ul>
+            <p>Get to Know Us</p>
+            <a>Careers</a>
+            <a>Blog</a>
+            <a>About Amazon</a>
+            <a>Investor Relations</a>
+            <a>Amazon Devices</a>
+            <a>Amazon Science</a>
+        </ul>
+        <ul>
+            <p>Make Money with Us</p>
+            <a>Sell products on Amazon</a>
+            <a>Sell on Amazon Business</a>
+            <a>Sell apps on Amazon</a>
+            <a>Become an Affiliate</a>
+            <a>Self-Publish with Us</a>
+            <a>Host an Amazon Hub</a>
+            <a>See More Make Money with Us</a>
+        </ul>
+        <ul>
+            <p>Amazon Payment Products</p>
+            <a>Amazon Business Card</a>
+            <a>Shop with Points</a>
+            <a>Reload Your Balance</a>
+            <a>Amazon Currency Converter</a>
+        </ul>
+        <ul>
+            <p>Let Us Help You</p>
+            <a>Amazon and COVID-19</a>
+            <a>Your Account</a>
+            <a>Your Orders</a>
+            <a>Shipping Rates & Policies</a>
+            <a>Returns & Replacements</a>
+            <a>Manage Your Content and Devices</a>
+            <a>Amazon Assistant</a>
+            <a>Help</a>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <div class="logoa"></div>
+        <div class="options">
+            <select>
+                <option value="En">
+                    English
+                </option>
+            </select>
+            <select>
+                <option value="1">
+                    $ USD - U.S. Dollar
+                </option>
+            </select>
+
+            <select>
+                <option value="4"> 
+                    United states
+                </option>
+            </select>
+        </div>
+    </div>
+    <div class="policies">
+        <div class="pages">
+            <a href="#">Conditions of Use</a>
+            <a href="#">Privacy Notice</a>
+            <a href="#">Your Ads Privacy Choices</a>
+        </div>
+        © 1996-2023, Amazon.com, Inc. or its affiliates
+    </div>
+</footer>
+
+</body>
+</html>
