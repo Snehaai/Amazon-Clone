@@ -397,6 +397,7 @@ h2 {
     height: 50px;
     background-image: url(amazon_logo.png);
     background-size: cover;
+    background-position: center;
 }
 
 .footer-bottom .options {
@@ -435,7 +436,7 @@ h2 {
 }
 
 /* Small Devices */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
     :root {
         font-size: 2vw;
     }
@@ -513,5 +514,3 @@ h2 {
         height: 8vw;
     }
 }
-
-
