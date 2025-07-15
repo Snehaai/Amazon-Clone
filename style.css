@@ -275,8 +275,11 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     flex: 1 1 calc(25% - 1.5rem); /* 4 cards per row with spacing */
     width: 300px;    /* Fixed width */
-    height: 320px;
+    height: 330px;
     position: relative;
+    overflow: hidden; /* Prevent content from overflowing */
+    display: flex;
+    flex-direction: column;
 }
 
 h2 {
@@ -291,25 +294,49 @@ h2 {
     gap: 10px;
     margin-top: 10px;
     justify-content: space-between;
+    flex-grow: 1;
+    overflow: hidden;
 }
 
 .image-grid div {
     flex: 1 1 calc(50% - 10px); /* 2 images per row inside .image-grid */
+    max-height: 130px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .image-grid img {
     width: 100%;
+    height: 90px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .item-name {
     text-align: left;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: #333;
-    margin-top: 1px;
+    margin-top: 3px;
+    line-height: 1.2;
+    flex-shrink: 0;
+    padding: 0 2px;
 }
 
 .full-width {
     width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 5px;
+}
+
+/* Single image card layout */
+.card .full-width + .item-name {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    line-height: 1.3;
+    flex-shrink: 0;
 }
 
 /* Positioning links */
@@ -355,9 +382,12 @@ h2 {
 }
 
 .footer-links {
-    height: 500px;
+    height: auto;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
     background-color: #232F3d;
     color: white;
 }
@@ -443,39 +473,75 @@ h2 {
     
     /* Header  */
     .navbar {
-        height: 5vw;
+        height: 60px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    
+    .nav-logo {
+        width: 80px;
+        height: 40px;
     }
     
     .nav-logo .logo {
-        width: 7vw;
+        width: 100%;
+        height: 100%;
     }
     
     .nav-search {
-        height: 4vw;
+        height: 35px;
+        width: 40%;
+        min-width: 200px;
     }
     
     .search-select {
-        width: 7vw;
+        width: 40px;
+        font-size: 10px;
     }
     
     .search-input {
-        width: 1vw;
+        width: 100%;
+        font-size: 12px;
     }
     
-    .search-icon i {
-        padding: .5rem .5rem;
+    .search-icon {
+        width: 35px;
+        font-size: 14px;
     }
     
-    .flag {
-        width: 2vw;
+    .nav-address {
+        display: none;
+    }
+    
+    .language-option {
+        display: none;
+    }
+    
+    .nav-signin, .nav-return {
+        font-size: 10px;
+        padding: 5px;
     }
     
     .nav-cart {
-        width: 3vw;
+        font-size: 10px;
+        padding: 5px;
     }
     
     .panel {
-        height: 5vw;
+        height: 35px;
+        flex-wrap: wrap;
+        overflow-x: scroll;
+    }
+    
+    .panel-ops {
+        display: flex;
+        white-space: nowrap;
+    }
+    
+    .panel-ops p {
+        margin: 0 10px;
+        font-size: 12px;
     }
     
     /* Main */
@@ -488,29 +554,81 @@ h2 {
     }
     
     .card {
-        height: 25vw;
-        flex: 1 0 20vw;
-        font-size: .5rem;
+        height: auto;
+        min-height: 300px;
+        flex: 1 0 calc(50% - 10px);
+        font-size: 12px;
     }
     
-    .card img {
-        height: 14vw;
+    .image-grid img {
+        height: 80px;
+    }
+    
+    .full-width {
+        height: 150px;
     }
     
     /* Footer */
     .back-option {
-        height: 5vw;
+        height: 50px;
     }
     
     .footer-links {
-        height: 40vw;
+        height: auto;
+        min-height: 300px;
+        flex-direction: column;
+        padding: 20px;
+        background-color: #232F3d;
+    }
+    
+    .footer-links ul {
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .footer-links ul p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .footer-links ul a {
+        font-size: 12px;
+        margin: 5px 0;
+    }
+    
+    .footer-bottom {
+        height: 60px;
+        flex-direction: column;
+        padding: 10px;
+        background-color: #232F3d;
     }
     
     .footer-bottom .logoa {
-        width: 7vw;
+        width: 60px;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .footer-bottom .options {
+        flex-direction: column;
+        gap: 5px;
+        margin-left: 0;
+    }
+    
+    .footer-bottom .options select {
+        font-size: 10px;
+        padding: 5px;
     }
     
     .policies {
-        height: 8vw;
+        height: auto;
+        min-height: 60px;
+        padding: 15px;
+        background-color: #131A22;
+    }
+    
+    .pages a {
+        margin: 0 5px;
+        font-size: 10px;
     }
 }
